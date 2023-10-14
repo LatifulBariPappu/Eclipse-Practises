@@ -9,5 +9,7 @@ public class Lamda {
     numbers.add(8);
     numbers.add(1);
     numbers.forEach( (n) -> { System.out.println(n); } ); //ArrayList's for each method
+    Consumer<Integer> method = (n) -> { System.out.println(n);}; //Consumer interface
+    numbers.forEach( method );
   }
 }
